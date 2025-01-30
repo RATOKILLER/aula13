@@ -42,7 +42,6 @@ class ListaDuplamenteEncadeada {
             atual.anterior = novoNo;
         }
         
-        // Impressão progressiva da lista
         imprimirListaParcial();
     }
 
@@ -85,7 +84,7 @@ class ListaDuplamenteEncadeada {
                 if (atual == inicio) inicio = atual.proximo;
                 if (atual == fim) fim = atual.anterior;
             }
-            atual = proximo; // Avança corretamente sem pular elementos
+            atual = proximo;
         }
     }
 }
@@ -98,7 +97,7 @@ public class Main {
 
         System.out.println("Vetor:");
         for (int i = 0; i < 1000; i++) {
-            numeros[i] = rand.nextInt(19999) - 9999;  // Correto
+            numeros[i] = rand.nextInt(19999) - 9999; 
             System.out.print(numeros[i] + " ");
         }
 
